@@ -30,16 +30,22 @@
         android:layout_height="1dp"
         android:layout_weight="1"></Space>
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#889696"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textColor="#fff" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#889696"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </RelativeLayout>
 
     <Space
         android:id="@+id/space2"
@@ -47,16 +53,22 @@
         android:layout_height="1dp"
         android:layout_weight="1"></Space>
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#889696"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textColor="@color/white" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#889696"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+    </RelativeLayout>
 
     <Space
         android:id="@+id/space3"
@@ -64,18 +76,42 @@
         android:layout_height="1dp"
         android:layout_weight="1"></Space>
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="#E0E2DB"
-        android:text="LogIn"
-        android:textColor="@color/black" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".45"
+            android:backgroundTint="#E0E2DB"
+            android:text="LogIn"
+            android:textColor="@color/black" />
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight=".1"></Space>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".45"
+            android:backgroundTint="#E0E2DB"
+            android:text="Register"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
     <Space
-        android:id="@+id/space4"
+        android:id="@+id/space5"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_weight="1"></Space>
