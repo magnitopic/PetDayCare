@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a2e39"
@@ -10,16 +11,25 @@
     <ListView
         android:id="@+id/petList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </ListView>
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Toadavía no hay mascotas registradas"
+        android:textColor="@color/black" />
+
     <ImageButton
         android:id="@+id/newPetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/add_icon"
-        android:contentDescription="Add new pet button"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:background="@drawable/round"/>
+        android:background="@drawable/round"
+        android:contentDescription="Add new pet button"
+        app:srcCompat="@drawable/add_icon" />
 </RelativeLayout>

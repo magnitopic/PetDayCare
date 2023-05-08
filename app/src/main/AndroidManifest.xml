@@ -12,11 +12,16 @@
         android:theme="@style/Theme.PetDayCare"
         tools:targetApi="31">
         <activity
-            android:name=".MainScreen"
+            android:name=".NewPet"
             android:exported="false" />
         <activity
+            android:name=".MainScreen"
+            android:exported="false"
+            android:label="Pet Daycare" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Account">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

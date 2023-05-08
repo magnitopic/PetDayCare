@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a2e39"
@@ -40,12 +41,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#889696"
-            android:ems="10"
             android:drawableStart="@drawable/email"
             android:drawablePadding="5dp"
-            android:paddingLeft="5dp"
+            android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
             android:textColor="#fff"
             android:textSize="25sp" />
     </RelativeLayout>
@@ -67,12 +68,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#889696"
-            android:ems="10"
-            android:paddingLeft="5dp"
-            android:drawablePadding="5dp"
             android:drawableStart="@drawable/pass"
+            android:drawablePadding="5dp"
+            android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:paddingLeft="5dp"
             android:textSize="25sp" />
     </RelativeLayout>
 
