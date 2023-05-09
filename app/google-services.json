@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "250774194174",
+    "project_id": "androidclass-10c3a",
+    "storage_bucket": "androidclass-10c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250774194174:android:979c79d581f1e9b1ea62af",
+        "android_client_info": {
+          "package_name": "com.example.petdaycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250774194174-bifnp6qcm3ocdp5h4ojl98r8itkr7qc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petdaycare",
+            "certificate_hash": "0765edccc1495ab1714e6ea6a6fb034bc1fe5991"
+          }
+        },
+        {
+          "client_id": "250774194174-7aa87hqgnuetf8sqlu92ds7hun311i5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa5oHct3gF_hxS1B705u4IullHt7HyKSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250774194174-7aa87hqgnuetf8sqlu92ds7hun311i5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
