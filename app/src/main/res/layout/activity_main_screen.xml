@@ -5,7 +5,7 @@
     android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2a2e39"
+    android:background="@color/main"
     tools:context=".MainScreen">
 
     <ListView
@@ -20,7 +20,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:text="Toadavía no hay mascotas registradas"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/newPetButton"

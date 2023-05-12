@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PetDayCare</string>
+    <string-array name="generos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
 </resources>
