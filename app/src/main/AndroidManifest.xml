@@ -12,10 +12,13 @@
         android:theme="@style/Theme.PetDayCare"
         tools:targetApi="31">
         <activity
-            android:name=".NewPet"
-            android:parentActivityName=".MainScreen"
-            android:label="Nueva Mascota"
+            android:name=".item_list_pet"
             android:exported="false" />
+        <activity
+            android:name=".NewPet"
+            android:exported="false"
+            android:label="Nueva Mascota"
+            android:parentActivityName=".MainScreen" />
         <activity
             android:name=".MainScreen"
             android:exported="false"

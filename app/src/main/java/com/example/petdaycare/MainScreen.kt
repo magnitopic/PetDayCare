@@ -12,6 +12,7 @@ class MainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
+
         val empty = findViewById<TextView>(R.id.empty)
         val petList = findViewById<ListView>(R.id.petList)
         petList.emptyView = empty
@@ -19,5 +20,6 @@ class MainScreen : AppCompatActivity() {
             var i = Intent(this, NewPet::class.java)
             startActivity(i)
         }
+
     }
 }
