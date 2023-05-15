@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
+        android:textSize="18dp"
         android:text="Toadavía no hay mascotas registradas"
         android:textColor="@color/white" />
 

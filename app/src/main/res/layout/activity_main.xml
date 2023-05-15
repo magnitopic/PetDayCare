@@ -46,8 +46,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:paddingLeft="5dp"
-            android:textColor="#fff"
+            android:padding="5dp"
             android:textSize="25sp" />
     </RelativeLayout>
 
@@ -73,7 +72,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingLeft="5dp"
+            android:padding="5dp"
             android:textSize="25sp" />
     </RelativeLayout>
 
@@ -97,8 +96,8 @@
             android:layout_weight=".45"
             android:backgroundTint="@color/tertiary"
             android:text="LogIn"
-            android:textSize="17dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="17dp" />
 
         <Space
             android:id="@+id/space4"
@@ -115,8 +114,8 @@
             android:layout_weight=".45"
             android:backgroundTint="@color/tertiary"
             android:text="Register"
-            android:textSize="17dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="17dp" />
     </LinearLayout>
 
     <Space

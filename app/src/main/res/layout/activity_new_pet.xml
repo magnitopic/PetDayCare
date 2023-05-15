@@ -35,12 +35,9 @@
             android:hint="Nombre"
             android:inputType="textPersonName"
             android:maxLength="25"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="13dp"/>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"></Space>
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -51,7 +48,8 @@
             android:hint="Raza"
             android:inputType="textPersonName"
             android:maxLength="25"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:layout_marginTop="13dp"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -86,22 +84,24 @@
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/weightInput"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:background="@color/contrast"
                 android:hint="Peso"
-                android:inputType="number"
-                android:maxLength="4" />
+                android:paddingLeft="10dp"
+                android:inputType="numberDecimal"
+                android:maxLength="7" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/kgText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/editTextNumber"
+                android:layout_alignRight="@+id/weightInput"
                 android:layout_centerVertical="true"
                 android:text="KG"
+                android:paddingRight="5dp"
                 android:textSize="19dp" />
         </RelativeLayout>
 
