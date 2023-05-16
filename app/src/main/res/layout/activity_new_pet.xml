@@ -11,13 +11,14 @@
     tools:context=".NewPet">
 
     <LinearLayout
+        android:id="@+id/fieldsContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".8"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/generalInfoTitle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -27,7 +28,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextNombre"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -40,7 +41,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTextRaza"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -52,7 +53,7 @@
             android:layout_marginTop="13dp"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/generoTitle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -62,14 +63,14 @@
             android:textSize="22sp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/generoSpinner"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@color/contrast" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/constitucionTitle"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -79,6 +80,7 @@
             android:textSize="22dp" />
 
         <RelativeLayout
+            android:id="@+id/pesoContainer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -108,12 +110,13 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/submitContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".2">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addPetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

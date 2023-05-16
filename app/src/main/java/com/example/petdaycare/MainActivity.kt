@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.loginButton).setOnClickListener {
             var i = Intent(this, MainScreen::class.java)
             startActivity(i)
+            // login()
         }
         val registerButton = findViewById<Button>(R.id.registerButton)
         registerButton.setOnClickListener{
@@ -40,7 +41,28 @@ class MainActivity : AppCompatActivity() {
                         lauchAlert("Se ha producido un error durante la operación.")
                     }
                 }
-        }
+        }else
+            lauchAlert("Algunos de los campos están vacios")
+    }
+
+    fun login(){
+        val editTextEmail = findViewById<EditText>(R.id.editTextTextEmailAddress)
+        val editTextPass = findViewById<EditText>(R.id.editTextTextPassword)
+
+        if (editTextEmail.text.isNotEmpty() && editTextPass.text.isNotEmpty()){
+            FirebaseAuth.getInstance()
+                .signInWithEmailAndPassword(editTextEmail.text.toString(),
+                    editTextPass.text.toString())
+                .addOnCompleteListener {
+                    if (it.isSuccessful){
+                        var i = Intent(this, MainScreen::class.java)
+                        startActivity(i)
+                    }else{
+                        lauchAlert("Se ha producido un error durante la operación.")
+                    }
+                }
+        }else
+            lauchAlert("Algunos de los campos están vacios")
     }
 
     fun lauchToast(message : String){

@@ -1,12 +1,11 @@
 package com.example.petdaycare
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ListView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +19,7 @@ class MainScreen : AppCompatActivity() {
             var i = Intent(this, NewPet::class.java)
             startActivity(i)
         }
-
     }
+
+    override fun onBackPressed() {}
 }
