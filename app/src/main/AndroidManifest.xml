@@ -12,7 +12,9 @@
         android:theme="@style/Theme.PetDayCare"
         tools:targetApi="31">
         <activity
-            android:name=".item_list_pet"
+            android:name=".SeeItem"
+            android:label="Info Mascota"
+            android:parentActivityName=".MainScreen"
             android:exported="false" />
         <activity
             android:name=".NewPet"

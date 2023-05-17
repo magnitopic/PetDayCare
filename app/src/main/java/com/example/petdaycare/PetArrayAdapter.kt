@@ -1,8 +1,6 @@
 package com.example.petdaycare
 
 import android.content.Context
-import android.media.MediaPlayer
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class WordArrayAdapter(context: Context, viewToPaint: Int, private val petList: ArrayList<Pet>) :
+class PetArrayAdapter(context: Context, viewToPaint: Int, private val petList: ArrayList<Pet>) :
     ArrayAdapter<Pet>(context, viewToPaint, petList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -24,7 +22,7 @@ class WordArrayAdapter(context: Context, viewToPaint: Int, private val petList: 
 
         nameText.text = petList.get(position).nombre
         typeText.text = petList.get(position).raza
-        if (petList.get(position).sexo == "femenino")
+        if (petList.get(position).sexo == "Femenino")
             genderImage.setImageResource(R.drawable.female)
         else
             genderImage.setImageResource(R.drawable.male)

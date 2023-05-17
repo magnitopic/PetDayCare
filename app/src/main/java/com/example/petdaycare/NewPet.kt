@@ -15,7 +15,7 @@ import com.google.firebase.ktx.Firebase
 class NewPet : AppCompatActivity() {
     lateinit var editTextName: EditText
     lateinit var editTextType: EditText
-    lateinit var spinerGender: Spinner
+    lateinit var spinnerGender: Spinner
     lateinit var editTextComposition: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class NewPet : AppCompatActivity() {
 
         editTextName = findViewById(R.id.editTextNombre)
         editTextType = findViewById(R.id.editTextRaza)
-        spinerGender = findViewById(R.id.generoSpinner)
+        spinnerGender = findViewById(R.id.generoSpinner)
         editTextComposition = findViewById(R.id.weightInput)
 
         val spinner: Spinner = findViewById(R.id.generoSpinner)
@@ -61,7 +61,7 @@ class NewPet : AppCompatActivity() {
         val pet = hashMapOf(
             "name" to editTextName.text.toString(),
             "type" to editTextType.text.toString(),
-            "gender" to spinerGender.selectedItem.toString(),
+            "gender" to spinnerGender.selectedItem.toString(),
             "composition" to editTextComposition.text.toString()
         )
         db.collection("pets")

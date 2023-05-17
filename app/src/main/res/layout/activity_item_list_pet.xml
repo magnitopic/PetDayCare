@@ -23,8 +23,7 @@
         android:layout_height="wrap_content"
         android:text="PlaceholderType"
         android:paddingLeft="10dp"
-        android:layout_below="@+id/textViewName"
-        ></TextView>
+        android:layout_below="@+id/textViewName" />
 
     <ImageView
         android:id="@+id/imageViewGender"
