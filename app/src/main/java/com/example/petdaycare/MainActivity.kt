@@ -15,9 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.loginButton).setOnClickListener {
-            var i = Intent(this, MainScreen::class.java)
-            startActivity(i)
-            // login()
+            login()
         }
         val registerButton = findViewById<Button>(R.id.registerButton)
         registerButton.setOnClickListener{
@@ -35,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     editTextPass.text.toString())
                 .addOnCompleteListener {
                     if (it.isSuccessful){
-                        lauchToast("Cuenta creada correctamente!")
+                        lauchToast("Cuenta creada correctamente! Se necesita hacer Login")
                     }else{
                         lauchAlert("Se ha producido un error durante la operación.")
                     }
@@ -55,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener {
                     if (it.isSuccessful){
                         var i = Intent(this, MainScreen::class.java)
+                        lauchToast("Login correcto!")
                         startActivity(i)
                     }else{
                         lauchAlert("Se ha producido un error durante la operación.")
