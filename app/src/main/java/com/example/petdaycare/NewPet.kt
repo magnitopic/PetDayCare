@@ -51,6 +51,7 @@ class NewPet : AppCompatActivity() {
         if (editTextName.text.toString().isEmpty()
             || editTextComposition.text.toString().isEmpty()
             || editTextType.text.toString().isEmpty()
+            || editTextComposition.text.toString().split(".").toTypedArray()[0].length > 3
         )
             return false
         return true

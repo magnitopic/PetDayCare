@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/contrast"
     android:layout_height="wrap_content">
 
     <TextView
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="PlaceholderType"
         android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
         android:layout_below="@+id/textViewName" />
 
     <ImageView
