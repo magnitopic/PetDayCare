@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">PetDayCare</string>
+    <string name="GInfo"><b><u>Información general</u></b></string>
+    <string name="gender"><b><u>Género</u></b></string>
+    <string name="comp"><b><u>Composición</u></b></string>
     <string-array name="generos">
         <item>Masculino</item>
         <item>Femenino</item>
